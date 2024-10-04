@@ -1,0 +1,5 @@
+Instructions:
+1. Run `npm I --force` command on both
+2. Run frontend with `npm run start` command
+3. Run backend with `node server.js` command
+2. Change the BACKEND_URLin the .env of frontend project according to where you host the backend before starting the server

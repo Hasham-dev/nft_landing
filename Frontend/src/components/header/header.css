@@ -1,0 +1,192 @@
+.NavBar {
+  background-color: #000000;
+  height: 70px;
+
+  /* grid-template-columns: 1fr 1fr; */
+  /* padding: 0 15px; */
+}
+
+.navbar_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+
+.container {
+      max-width: 1280px;
+        display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+      flex-wrap: wrap;
+
+
+}
+.NavBar img {
+  cursor: fixed;
+}
+
+.NavBar h3 {
+  color: rgb(255, 255, 255);
+}
+.NavBar button {
+  cursor: pointer;
+
+  width: 115px;
+  justify-self: end;
+  padding: 5px 0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu_buttons {
+  display: flex;
+  gap: 0;
+}
+
+.hamburger-react {
+  display: none;
+}
+
+.menu_buttons span {
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.menu_buttons span:hover {
+  text-decoration: underline;
+  color: #ffffff90;
+}
+
+.slider {
+  background-color: #000000;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+  color: #ffffff;
+  font-size: 23px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+  transition: all 0.6s;
+  right: -700px;
+}
+
+.open {
+  right: 0;
+}
+
+/* .social_buttons {
+  display: flex;
+  align-items: center;
+  max-width: 1800px;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 80px;
+} */
+
+
+
+/* .social_buttons_container {
+  display: flex;
+} */
+
+.footer {
+  z-index: 15;
+  background-color: #000000;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  color: white;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0px 20px;
+      max-width: 1280px;
+      flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.social_buttons_container {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+} 
+
+.social_buttons_container img:hover {
+  transition: all ease-in 0.3s;
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu_buttons {
+    display: none;
+  }
+
+  
+
+  .slider {
+    display: flex;
+  }
+
+  .hamburger-react {
+    display: flex;
+    z-index: 21;
+  }
+
+  .NavBar .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .NavBar {
+    height: 100px;
+
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer_container {
+    justify-content: center;
+  }
+
+  .social_buttons_container {
+    margin-left: 0px;
+  }
+}
+
+
+.navbar_link {
+  color: white;
+  font-weight: 600;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar_link a {
+  color: white;
+}
+
+.navbar_link a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

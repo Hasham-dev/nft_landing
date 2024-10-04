@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Cabin Sketch', cursive;
+  scrollbar-width: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(./components/flippage/background.jpeg);
+  background-size: cover;
+  background-position: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+
+* {
+  scrollbar-width: none;
+
+}
